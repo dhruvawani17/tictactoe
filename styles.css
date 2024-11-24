@@ -1,71 +1,86 @@
-/* Center alignment for container */
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4a90e2; /* Bluish background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
 .container {
     text-align: center;
-    margin-top: 50px;
+    background-color: #1f3540;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px; /* Responsive width */
 }
 
-/* Title styling */
+/* Title Styling */
 .title {
-    margin-top: 50px;
-    color: #26ffcb;
-    font-size: 60px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 36px;
     font-weight: bold;
-    text-shadow: 0px 0px 8px #26ffcb, 0px 0px 16px #1f3540;
 }
 
-/* Reset button styling */
+/* Status text Styling */
+#statusText {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Reset Button Styling */
 .reset {
-    width: 250px;
-    height: 60px;
+    width: 200px;
+    height: 50px;
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 50px;
-    background: #1f3540;
-    font-size: 22px;
-    font-weight: bold;
-    color: #26ffcb;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    transition: transform 0.2s ease, background-color 0.3s;
+    border-radius: 25px;
+    background: #34a853;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+    transition: background 0.3s ease;
 }
 
 .reset:hover {
-    background: #26ffcb;
-    color: #1f3540;
-    transform: scale(1.05);
+    background: #1b7f3b;
 }
 
-/* Board and rows alignment */
+/* Board Styling */
 .board {
-    height: auto;
-    width: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px auto;
-    gap: 10px;
-    background-color: #0f1b21;
-    border-radius: 16px;
-    padding: 10px;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
 }
 
-/* Individual box styling */
+/* Box Styling */
 .boxes {
     display: flex;
-    height: 180px;
-    width: 180px;
-    background: #1f3540;
-    border: 4px solid #0f1b21;
-    border-radius: 12px;
-    cursor: pointer;
     justify-content: center;
     align-items: center;
-    transition: transform 0.2s ease, background-color 0.3s;
+    height: 120px;
+    width: 120px;
+    background: #2c3e50;
+    border: 3px solid #34495e;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .boxes:hover {
-    background-color: #26ffcb;
+    background-color: #34495e;
     transform: scale(1.05);
 }
 
@@ -74,23 +89,33 @@
     height: 60%;
 }
 
-/* Game result display */
-.status h2 {
-    margin-top: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    color: #26ffcb;
-    text-shadow: 0px 0px 8px #26ffcb;
-}
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
 
-/* Draw result styling */
-.draw {
-    color: #f2f2f2;
-    text-shadow: 0px 0px 8px #ff0000;
-}
+    .title {
+        font-size: 28px;
+    }
 
-/* Winner announcement */
-.winner {
-    color: #00ff88;
-    text-shadow: 0px 0px 8px #00ff88;
+    #statusText {
+        font-size: 18px;
+    }
+
+    .reset {
+        width: 180px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .boxes {
+        height: 90px;
+        width: 90px;
+    }
+
+    .boxes img {
+        width: 50%;
+        height: 50%;
+    }
 }
