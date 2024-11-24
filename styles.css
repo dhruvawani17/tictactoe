@@ -16,11 +16,11 @@ body {
 .container {
     text-align: center;
     background-color: #1f3540;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
     width: 90%;
-    max-width: 700px; /* Responsive width */
+    max-width: 650px; /* Responsive width */
     position: relative;
     z-index: 1;
 }
@@ -29,17 +29,19 @@ body {
 .title {
     margin-top: 20px;
     color: #fff;
-    font-size: 42px;
+    font-size: 48px;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
 }
 
 /* Status Text Styling */
 #statusText {
-    font-size: 26px;
+    font-size: 28px;
     margin-top: 20px;
     font-weight: bold;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
 }
 
 /* Reset Button Styling */
@@ -55,6 +57,7 @@ body {
     color: #fff;
     margin-top: 40px;
     transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 30px; /* Adds space below the reset button */
 }
 
 .reset:hover {
@@ -67,7 +70,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 /* Box Styling */
@@ -82,13 +85,13 @@ body {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.4s ease, box-shadow 0.3s ease;
 }
 
 .boxes:hover {
     background-color: #34495e;
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
 }
 
 /* Image inside Boxes */
@@ -96,31 +99,34 @@ body {
     max-width: 75%;
     max-height: 75%;
     object-fit: contain;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 
 .boxes:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 /* Responsive Design for Mobile */
 @media (max-width: 600px) {
     .container {
-        padding: 20px;
+        padding: 30px 20px;
     }
 
     .title {
-        font-size: 32px;
+        font-size: 36px;
+        margin-bottom: 20px;
     }
 
     #statusText {
-        font-size: 20px;
+        font-size: 22px;
+        margin-top: 15px;
     }
 
     .reset {
-        width: 180px;
+        width: 200px;
         height: 50px;
         font-size: 18px;
+        margin-top: 30px;
     }
 
     .boxes {
@@ -133,4 +139,3 @@ body {
         max-height: 60%;
     }
 }
-
