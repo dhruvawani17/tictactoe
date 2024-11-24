@@ -1,5 +1,5 @@
-const crossIcon = 'crosss.png'; // Path to the X image
-const circleIcon = 'gol.jpg';  // Path to the O image
+const crossIcon = 'https://clipartcraft.com/images/x-transparent-big-1.png'; // New X image URL
+const circleIcon = 'https://clipartcraft.com/images/circle-transparent-yellow-2.png'; // New O image URL
 
 let data = ["", "", "", "", "", "", "", "", ""];
 let count = 0;
