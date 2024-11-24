@@ -1,0 +1,96 @@
+/* Center alignment for container */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Title styling */
+.title {
+    margin-top: 50px;
+    color: #26ffcb;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 0px 0px 8px #26ffcb, 0px 0px 16px #1f3540;
+}
+
+/* Reset button styling */
+.reset {
+    width: 250px;
+    height: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #1f3540;
+    font-size: 22px;
+    font-weight: bold;
+    color: #26ffcb;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.reset:hover {
+    background: #26ffcb;
+    color: #1f3540;
+    transform: scale(1.05);
+}
+
+/* Board and rows alignment */
+.board {
+    height: auto;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    gap: 10px;
+    background-color: #0f1b21;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Individual box styling */
+.boxes {
+    display: flex;
+    height: 180px;
+    width: 180px;
+    background: #1f3540;
+    border: 4px solid #0f1b21;
+    border-radius: 12px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.boxes:hover {
+    background-color: #26ffcb;
+    transform: scale(1.05);
+}
+
+.boxes img {
+    width: 60%;
+    height: 60%;
+}
+
+/* Game result display */
+.status h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #26ffcb;
+    text-shadow: 0px 0px 8px #26ffcb;
+}
+
+/* Draw result styling */
+.draw {
+    color: #f2f2f2;
+    text-shadow: 0px 0px 8px #ff0000;
+}
+
+/* Winner announcement */
+.winner {
+    color: #00ff88;
+    text-shadow: 0px 0px 8px #00ff88;
+}
