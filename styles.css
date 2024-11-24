@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #4a90e2, #6c7ac9); /* Bluish gradient background */
+    background: linear-gradient(135deg, #0b3c63, #174d76); /* Dark blue gradient background */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -71,6 +71,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
     margin-top: 30px;
+    margin-bottom: 20px; /* Space below the board */
 }
 
 /* Box Styling */
@@ -86,7 +87,7 @@ body {
     cursor: pointer;
     position: relative;
     transition: transform 0.3s ease, background-color 0.4s ease, box-shadow 0.3s ease;
-    margin: auto;
+    margin: 0 auto; /* Center boxes horizontally */
 }
 
 .boxes:hover {
